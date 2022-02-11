@@ -93,7 +93,7 @@ for(i in 1:length(d$wc_id)){
   dout$ID_original[i]=as.character(di$id_original)
   dout$vegCover_stats_cv[i] = cv(rr_raw[], na.rm = T)
   dout$vegCover_stats_mean[i] = mean(rr_raw[], na.rm = T)
-  dout$vegCover_stats_median[i] = mean(rr_raw[], na.rm = T)
+  dout$vegCover_stats_median[i] = median(rr_raw[], na.rm = T)
   dout$vegCover_stats_sd[i] = sd(rr_raw[], na.rm = T)
   dout[i,7:11] = quantile(rr_raw[], na.rm = T)
   
